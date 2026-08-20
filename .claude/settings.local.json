@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(echo \"PID: $!\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(cat /tmp/dev-server.log | tail -20)",
+      "Bash(node \"c:\\\\dev\\\\selection-board\\\\scripts\\\\pull-silos.mjs\" \"https://yxrrnvdnmffuxetjxrel.supabase.co\" \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl4cnJudmRubWZmdXhldGp4cmVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU3Mjk1NzIsImV4cCI6MjA5MTMwNTU3Mn0.AzddfECgzrvng-uP0F3CGAYlJ6_YoStbvKGpI8QHHEI\")",
+      "Bash(node -e ' *)",
+      "Bash(node \"c:\\\\dev\\\\selection-board\\\\scripts\\\\pull-roles.mjs\" \"https://yxrrnvdnmffuxetjxrel.supabase.co\" \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inl4cnJudmRubWZmdXhldGp4cmVsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU3Mjk1NzIsImV4cCI6MjA5MTMwNTU3Mn0.AzddfECgzrvng-uP0F3CGAYlJ6_YoStbvKGpI8QHHEI\")",
+      "Bash(Get-Content \"c:\\\\dev\\\\selection-board\\\\scripts\\\\roles-export.sql\" -Tail 6)",
+      "Bash(ls \"C:/dev/data/\")",
+      "Read(//c/dev/data/**)",
+      "Bash(node \"c:\\\\dev\\\\selection-board\\\\scripts\\\\merge-candidates.mjs\")",
+      "Bash(node --input-type=module)",
+      "Bash(node scripts/merge-candidates.mjs)",
+      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\(Object.keys\\({...p.dependencies,...p.devDependencies}\\)\\)\")"
+    ]
+  }
+}

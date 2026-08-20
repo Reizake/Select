@@ -1,0 +1,49 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/import-candidates.mjs)",
+      "Bash(node_modules\\\\.bin\\\\tsc --noEmit)",
+      "Bash(node .\\\\node_modules\\\\typescript\\\\bin\\\\tsc --noEmit)",
+      "PowerShell(node \".\\\\node_modules\\\\typescript\\\\bin\\\\tsc\" --noEmit 2>&1)",
+      "Bash(Get-ChildItem -Path \"c:\\\\dev\\\\selection-board\\\\src\" -Recurse -Filter \"*.tsx\")",
+      "Bash(Select-Object -ExpandProperty FullName)",
+      "Bash(npm install *)",
+      "Bash(node \".\\\\node_modules\\\\typescript\\\\bin\\\\tsc\" --noEmit)",
+      "Bash(node --env-file=.env.local scripts/diagnose-delete.mjs)",
+      "Bash(npm uninstall *)",
+      "Bash(npm audit *)",
+      "Bash(Remove-Item \"c:\\\\dev\\\\selection-board\\\\src\\\\components\\\\auth\\\\ProtectedRoute.tsx\")",
+      "Bash(node -e ' *)",
+      "Bash(npm i *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "PowerShell(git add src/app/board/page.tsx)",
+      "PowerShell(git commit -m \"Remove temporary diagnostic logs from realtime INSERT handler\")",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(mkdir -p c:/dev/selection-board/scripts && echo \"created\")",
+      "Bash(npx eslint *)",
+      "Bash(xargs ls)",
+      "Bash(git stash *)",
+      "Bash(node -e \"const l=require\\('lucide-react'\\); const icons=['LayoutPanelTop','LayoutPanelLeft','IdCardLanyard','MicVocal','Drama','Plane','Handshake','Wrench','PanelLeftClose','PanelLeftOpen','Columns2']; icons.forEach\\(i => console.log\\(i, !!l[i]\\)\\)\")",
+      "Bash(grep -v \"^$\")",
+      "Bash(node -e \"const l=require\\('lucide-react'\\); ['UserCheck','UserLock','UserSearch','UserPen'].forEach\\(i => console.log\\(i, !!l[i]\\)\\)\")",
+      "Bash(Remove-Item \"c:\\\\dev\\\\selection-board\\\\src\\\\components\\\\board\\\\BoardHeader.tsx\")",
+      "Bash(git rm *)",
+      "PowerShell(git -C \"c:\\\\dev\\\\selection-board\" add src/components/board/UserProfilePopover.tsx src/app/board/page.tsx src/components/board/UserIdentity.tsx src/components/board/CandidateCard.tsx)",
+      "PowerShell(git -C \"c:\\\\dev\\\\selection-board\" rm src/components/board/BoardHeader.tsx)",
+      "Bash(npm --prefix c:/dev/selection-board run build)",
+      "PowerShell(git -C \"c:\\\\dev\\\\selection-board\" add src/components/board/UserProfilePopover.tsx src/components/board/UserIdentity.tsx src/components/board/CandidateCard.tsx)",
+      "PowerShell(git -C \"c:\\\\dev\\\\selection-board\" add src/app/board/page.tsx src/components/board/UserProfilePopover.tsx)",
+      "PowerShell(git -C \"c:\\\\dev\\\\selection-board\" add src/app/board/page.tsx)",
+      "PowerShell(git -C \"c:\\\\dev\\\\selection-board\" add src/app/board/page.tsx src/components/auth/AuthProvider.tsx)",
+      "PowerShell(git -C \"c:\\\\dev\\\\selection-board\" commit -m \"remove invalid realtime channel rejoin, handle USER_UPDATED event\")",
+      "PowerShell(git -C \"c:\\\\dev\\\\selection-board\" commit -m \"header collapses to one row at lg, two-tier below\")",
+      "PowerShell(git -C \"c:\\\\dev\\\\selection-board\" commit -m \"header breakpoints - one-row down to lg with icon-only buttons, two-tier below\")",
+      "PowerShell(git -C \"c:\\\\dev\\\\selection-board\" commit -m \"monotonic header breakpoints - labels at xl, two-tier below md\")"
+    ],
+    "additionalDirectories": [
+      "c:\\dev\\selection-board\\scripts"
+    ]
+  }
+}

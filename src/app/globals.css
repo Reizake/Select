@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Seattle palette */
+  --color-sound-50:  #EAEEF3;
+  --color-sound-100: #D2DAE5;
+  --color-sound-200: #A6B6CB;
+  --color-sound-300: #7991B0;
+  --color-sound-400: #4D6D96;
+  --color-sound-500: #1E3A5F;
+  --color-sound-600: #1A324F;
+  --color-sound-700: #152940;
+  --color-sound-800: #102032;
+  --color-sound-900: #0B1622;
+
+  --color-forest-50:  #F2F7EF;
+  --color-forest-100: #DEEAD8;
+  --color-forest-200: #BDD5B1;
+  --color-forest-300: #9CC08A;
+  --color-forest-400: #85B274;
+  --color-forest-500: #6FA85C;
+  --color-forest-600: #5C8F4C;
+  --color-forest-700: #49733C;
+  --color-forest-800: #37582D;
+  --color-forest-900: #253D1F;
+
+  --color-steel-50:  #EEF3F8;
+  --color-steel-100: #D5E1EC;
+  --color-steel-200: #AAC2D8;
+  --color-steel-300: #80A4C5;
+  --color-steel-400: #6A96BE;
+  --color-steel-500: #5388B5;
+  --color-steel-600: #467398;
+  --color-steel-700: #395E7B;
+  --color-steel-800: #2C495F;
+  --color-steel-900: #1F3442;
+
+  --color-teal-50:  #ECF2F5;
+  --color-teal-100: #D0DEE4;
+  --color-teal-200: #A2BDC9;
+  --color-teal-300: #739CAE;
+  --color-teal-400: #588C9C;
+  --color-teal-500: #3D7A8C;
+  --color-teal-600: #336675;
+  --color-teal-700: #28525E;
+  --color-teal-800: #1E3D47;
+  --color-teal-900: #142930;
+
+  --color-salmon-50:  #FBEEE8;
+  --color-salmon-100: #F4D6C8;
+  --color-salmon-200: #E8AE92;
+  --color-salmon-300: #DC865C;
+  --color-salmon-400: #D38068;
+  --color-salmon-500: #C97D5C;
+  --color-salmon-600: #B16B4E;
+  --color-salmon-700: #8A533D;
+  --color-salmon-800: #5F392A;
+  --color-salmon-900: #3D2418;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Force dark text in all input fields */
+input,
+textarea,
+select {
+  color: #0f172a !important; /* slate-900 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #64748b !important; /* slate-500 */
+}
+
+/* Ensure text stays dark even when focused */
+input:focus,
+textarea:focus,
+select:focus {
+  color: #0f172a !important;
+}
